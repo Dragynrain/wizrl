@@ -1181,7 +1181,7 @@ def main_menu():
 
         # show the game's title, and some credits!
         libtcod.console_set_default_foreground(0, libtcod.black)
-        libtcod.console_print_ex(0, SCREEN_WIDTH / 2, int(SCREEN_HEIGHT * .75), libtcod.BKGND_NONE, libtcod.CENTER, 'MagicRL')
+        libtcod.console_print_ex(0, SCREEN_WIDTH / 2, int(SCREEN_HEIGHT * .75), libtcod.BKGND_NONE, libtcod.CENTER, 'WizRL')
         libtcod.console_print_ex(0, SCREEN_WIDTH / 2, int(SCREEN_HEIGHT * .75) + 2, libtcod.BKGND_NONE, libtcod.CENTER, 'By Dragyn')
 
         # show options and wait for the player's choice
@@ -1202,7 +1202,7 @@ def main_menu():
             break
 
 #libtcod.console_set_custom_font('arial10x10.png', libtcod.FONT_TYPE_GREYSCALE | libtcod.FONT_LAYOUT_TCOD)
-libtcod.console_set_custom_font('magicrl_tileset_32x32.png', libtcod.FONT_TYPE_GREYSCALE | libtcod.FONT_LAYOUT_ASCII_INROW,
+libtcod.console_set_custom_font('wizrl_tileset_32x32.png', libtcod.FONT_TYPE_GREYSCALE | libtcod.FONT_LAYOUT_ASCII_INROW,
     nb_char_horiz=16, nb_char_vertic=32)
 libtcod.console_init_root(SCREEN_WIDTH, SCREEN_HEIGHT, 'python/libtcod tutorial', False)
 libtcod.sys_set_fps(LIMIT_FPS)
